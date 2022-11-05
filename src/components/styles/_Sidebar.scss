@@ -1,0 +1,44 @@
+.sidebar {
+    height: 100vh;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: rgb(22, 24, 25);
+
+    .sidebar__logodiv {
+        height: 150px;
+        width: 100%;
+        display: grid;
+        place-content: center;
+
+        .sidebar__logodiv__img {
+            height: 100px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .sidebar__nav {
+        color: wheat;
+        // color: rgb(116, 96, 162);
+
+
+        .sidebar__nav__navitems {
+            height: 50px;
+            width: 100%;
+            padding: 5px 10px 5px 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+            font-family: Nunito Sans;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+
+            :first-child{
+                margin: 0px 10px 0px 10px;
+            }
+        }
+    }
+}
