@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Admin-dashboard/static/css/main.a2e403aa.css",
+    "main.js": "/Admin-dashboard/static/js/main.4b66f0eb.js",
+    "static/js/787.32949bba.chunk.js": "/Admin-dashboard/static/js/787.32949bba.chunk.js",
+    "static/media/asthetic-background.jpg": "/Admin-dashboard/static/media/asthetic-background.dc8f37019abfbb38b275.jpg",
+    "index.html": "/Admin-dashboard/index.html",
+    "main.a2e403aa.css.map": "/Admin-dashboard/static/css/main.a2e403aa.css.map",
+    "main.4b66f0eb.js.map": "/Admin-dashboard/static/js/main.4b66f0eb.js.map",
+    "787.32949bba.chunk.js.map": "/Admin-dashboard/static/js/787.32949bba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2e403aa.css",
+    "static/js/main.4b66f0eb.js"
+  ]
+}
