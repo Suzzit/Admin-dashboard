@@ -1,8 +1,11 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import './App.css';
 import './style.scss'
-import Sidebar from './components/Sidebar';
 import WebFont from 'webfontloader';
+import Loader from './utils/Loader';
+import Sidebar from './components/Sidebar';
+
+const Dashboard = lazy(() => import('./pages/Dashboard'))
 
 
 function App() {
@@ -13,11 +16,14 @@ function App() {
       }
     });
   }, [])
-  
+
   return (
-    <>
+    <div className='App'>
       <Sidebar />
-    </>
+      <Suspense fallback={<Loader />}>
+        <Dashboard />
+      </Suspense>
+    </div>
   );
 }
 
