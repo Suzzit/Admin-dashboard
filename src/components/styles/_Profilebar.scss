@@ -1,0 +1,17 @@
+.profilebar-wrapper {
+    width: calc(100% - 300px);
+    height: 90px;
+    position: absolute;
+    position: fixed;
+    top: 0;
+}
+
+.profilebar {
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    // box-shadow: 5px 5px 20px rgb(22, 24, 25);;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgb(222,226,230);
+}

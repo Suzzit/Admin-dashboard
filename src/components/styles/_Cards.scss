@@ -1,0 +1,123 @@
+
+// Styling for cards with image on left side
+.leftimg-card{
+    height: 200px;
+    width: 500px;
+    display: flex;
+    border: 1px solid rgb(222,226,230);
+    margin: 10px;
+
+    .cardsimage__container{
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+    }
+    
+    .cards__img{
+        height: 100%;
+        width: 150px;
+        object-fit: cover;
+    }
+    
+    .cards__info{
+    
+        span{
+            text-align: left;
+        }
+    }
+    
+    .cards__info__title{
+        display: block;
+        padding: 10px;
+    }
+    
+    .cards__info__content{
+        display: block;
+        padding: 10px;
+    }
+}
+
+
+// Styling for cards with image on Right side
+.rightimg-card{
+    height: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid rgb(222,226,230);
+    margin: 10px;
+    
+    .cardsimage__container{
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+    }
+    
+    .cards__img{
+        height: 100%;
+        width: 150px;
+        object-fit: cover;
+    }
+    
+    .cards__info{
+        width: calc(100% - 150px);
+        span{
+            text-align: left;
+        }
+    }
+    
+    .cards__info__title{
+        display: block;
+        padding: 10px;
+    }
+    
+    .cards__info__content{
+        display: block;
+        padding: 10px;
+    }
+}
+
+// Styling for cards with image on top
+.topimg-card{
+    height: fit-content;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(222,226,230);
+    margin-left: 10px;
+    
+    .cardsimage__container{
+        height: 200px;
+        width: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cards__img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .cards__info{
+    
+        span{
+            text-align: left;
+        }
+    }
+    
+    .cards__info__title{
+        display: block;
+        padding: 10px;
+    }
+    
+    .cards__info__content{
+        display: block;
+        padding: 10px;
+    }
+}
+
+//styling for cards with on image text

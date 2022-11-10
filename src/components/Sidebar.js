@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import logo from '../images/logo.png'
 import astheticPic from '../images/asthetic-background.jpg'
 import {
@@ -20,31 +21,33 @@ function Sidebar() {
     const navItems = [
         {
             name: 'Dashboard',
-            Icon: dashboardIcon
-        },
-        {
-            name: 'Dashboard',
-            Icon: dashboardIcon
+            Icon: dashboardIcon,
+            to: "/"
         },
         {
             name: 'Table',
-            Icon: tableIcon
+            Icon: tableIcon,
+            to: 'tables'
         },
         {
             name: 'Cards',
-            Icon: cardsIcon
+            Icon: cardsIcon,
+            to: 'cards'
         },
         {
             name: 'Products',
-            Icon: productsIcon
+            Icon: productsIcon,
+            to: 'products'
         },
         {
             name: 'Buttons',
-            Icon: buttonIcon
+            Icon: buttonIcon,
+            to: 'buttons'
         },
         {
             name: 'Dropdown',
-            Icon: dropdownButton
+            Icon: dropdownButton,
+            to: 'dropdowns'
         },
         {
             name: 'Analytics',
@@ -72,12 +75,15 @@ function Sidebar() {
             </div>
             <nav className='sidebar__nav'>
                 {
-                    navItems.map(({ name, Icon }, index) => {
-                        return (<div key={index}
-                            className='sidebar__nav__navitems'
-                            onClick={(name) => { handleClick(name) }}>
-                            <Icon />{name}
-                        </div>)
+                    navItems.map(({ name, Icon, to }, index) => {
+                        return (<NavLink to={to}>
+                            <div key={index}
+                                className='sidebar__nav__navitems'
+                                onClick={(name) => { handleClick(name) }}>
+                                <Icon />
+                                {name}
+                            </div>
+                        </NavLink>)
                     })
                 }
             </nav>
